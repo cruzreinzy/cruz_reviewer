@@ -30,3 +30,5 @@ Route::get('/notifications',[NotificationsController::class,'index'])->name('not
 Route::get('/settings',[SettingsController::class,'index'])->name('settings');
 
 Route::get('/login',[AuthController::class,'indexlogin'])->name('login');
+
+Route::get('/signup',[AuthController::class,'indexsignup'])->name('signup');

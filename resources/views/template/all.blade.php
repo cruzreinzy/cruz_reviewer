@@ -23,6 +23,7 @@
             <a href="{{route('notifications')}}">Notifications</a>
             <a href="{{route('settings')}}">Settings</a>
             <a href="{{route('login')}}">Log In</a>
+            <a href="{{route('signup')}}">Sign Up</a>
         </header>
 
         <main>
