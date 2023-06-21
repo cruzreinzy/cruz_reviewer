@@ -17,13 +17,13 @@
     </head>
     <body class="antialiased">
         <header>
-            <a href="">Home</a>
-            <a href="">Profile</a>
-            <a href="">Contacts</a>
-            <a href="">Notifications</a>
-            <a href="">Settings</a>
-            <a href="">Log In</a>
-            <a href="">Log Out</a>
+            <a href="{{route('home')}}">Home</a>
+            <a href="{{route('profile')}}">Profile</a>
+            <a href="{{route('contacts')}}">Contacts</a>
+            <a href="{{route('notifications')}}">Notifications</a>
+            <a href="{{route('settings')}}">Settings</a>
+            <a href="{{route('login')}}">Log In</a>
+            <a href="{{route('logout')}}">Log Out</a>
         </header>
 
         <main>
