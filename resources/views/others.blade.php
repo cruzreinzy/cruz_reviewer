@@ -3,6 +3,19 @@
 <!-- database creation -> env change data base name and type php artisan migrate -->
 
 
+<!-- php artisan migrate -->
+<!-- php artisan migrate:fresh --seed -->
+<!-- php artisan serve -->
+
+
+<!-- use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+
+(auth controller) -->
+
+
 <!-- \App\Models\User::factory()->create([
             'name' => 'Administrator',
             'email' => 'admin',
