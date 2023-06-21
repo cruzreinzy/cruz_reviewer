@@ -28,3 +28,5 @@ Route::get('/contacts',[ContactsController::class,'index'])->name('contacts');
 Route::get('/notifications',[NotificationsController::class,'index'])->name('notifications');
 
 Route::get('/settings',[SettingsController::class,'index'])->name('settings');
+
+Route::get('/login',[AuthController::class,'indexlogin'])->name('login');
