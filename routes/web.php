@@ -31,4 +31,8 @@ Route::get('/settings',[SettingsController::class,'index'])->name('settings');
 
 Route::get('/login',[AuthController::class,'indexlogin'])->name('login');
 
+Route::get('/login',[AuthController::class,'login'])->name('login.submit');
+
 Route::get('/signup',[AuthController::class,'indexsignup'])->name('signup');
+
+Route::post('/signup',[AuthController::class,'signup'])->name('signup.submit');
