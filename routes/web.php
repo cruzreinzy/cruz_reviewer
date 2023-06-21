@@ -19,15 +19,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('/',[HomeController::class,'index'])->middleware('auth')->name('home');
 
-Route::get('/profile',[ProfileController::class,'index'])->name('profile');
+Route::get('/profile',[ProfileController::class,'index'])->middleware('auth')->name('profile');
 
-Route::get('/contacts',[ContactsController::class,'index'])->name('contacts');
+Route::get('/contacts',[ContactsController::class,'index'])->middleware('auth')->name('contacts');
 
-Route::get('/notifications',[NotificationsController::class,'index'])->name('notifications');
+Route::get('/notifications',[NotificationsController::class,'index'])->middleware('auth')->name('notifications');
 
-Route::get('/settings',[SettingsController::class,'index'])->name('settings');
+Route::get('/settings',[SettingsController::class,'index'])->middleware('auth')->name('settings');
 
 Route::get('/login',[AuthController::class,'indexlogin'])->name('login');
 
@@ -36,3 +36,5 @@ Route::post('/login',[AuthController::class,'login'])->name('login.submit');
 Route::get('/signup',[AuthController::class,'indexsignup'])->name('signup');
 
 Route::post('/signup',[AuthController::class,'signup'])->name('signup.submit');
+
+Route::get('/logout',[AuthController::class,'logout'])->middleware('auth')->name('logout');
