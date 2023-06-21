@@ -9,10 +9,12 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+
     public function indexlogin(){
         return view('login');
     }
     
+
     public function login(Request $req){
         $credentials = $req->only(['username','password']);
 
@@ -23,9 +25,11 @@ class AuthController extends Controller
         }
     }
 
+
     public function indexsignup(){
         return view('signup');
     }
+
 
     public function signup(Request $req){
 
@@ -40,7 +44,7 @@ class AuthController extends Controller
         $user = User::create($val);
 
         if($user){
-            return redirect('/');
+            return redirect('/login');
         }
     }
 
