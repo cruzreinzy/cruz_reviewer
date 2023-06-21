@@ -21,10 +21,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[HomeController::class,'index'])->name('home');
 
-Route::get('/profile',[ProfileController::class,'index'])->name('home');
+Route::get('/profile',[ProfileController::class,'index'])->name('profile');
 
-Route::get('/contacts',[ContactsController::class,'index'])->name('home');
+Route::get('/contacts',[ContactsController::class,'index'])->name('contacts');
 
-Route::get('/notifications',[NotificationsController::class,'index'])->name('home');
+Route::get('/notifications',[NotificationsController::class,'index'])->name('notifications');
 
-Route::get('/settings',[SettingsController::class,'index'])->name('home');
+Route::get('/settings',[SettingsController::class,'index'])->name('settings');
